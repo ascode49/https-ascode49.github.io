@@ -1,0 +1,191 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}    
+.nav{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    scale: 1.1;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    transition: 0.25s;
+    scale: 1.1;
+}
+.header a:hover{
+    font-size: x-large;
+    color:#E57C23;
+    font-weight: bold;
+}
+.header::selection{
+    background-color: #107e57;
+}
+img{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    margin-top: 1em;
+    scale: 0.8;
+}
+img:hover{
+    border: 0.25em solid #0079FF;
+    transition: 0.25s;
+    cursor:pointer;
+}
+html { 
+    background: url(earth-1756274_1280.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#top{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+#top:hover{
+    border: 0.25em solid #E57C23;
+    transition: 0.25s;
+}
+#contact{
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #E57C23;
+}
+#contact:hover{
+    font-size: large;
+    color: white;
+}
+.contact{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    scale: 1.25;
+}
+.fa-twitter{
+    color: white;
+    position: absolute;
+    scale:2.5;
+    transition: 0.25s;
+    margin-left: 15em;
+}
+.fa-twitter:hover{
+    cursor: pointer;
+    color: #E57C23;
+    scale: 3.25;
+}
+.fa-facebook-f{
+    color: white;
+    position: absolute;
+    scale:2.5;
+    transition: 0.25s;
+    margin-left: -20em;
+}
+.fa-facebook-f:hover{
+    cursor: pointer;
+    color: #E57C23;
+    scale: 3.25;
+}
+.fa-envelope{
+    color: white;
+    position: absolute;
+    scale:2.5;
+    transition: 0.25s;
+    margin-left: -20em;
+}
+.fa-envelope:hover{
+    cursor: pointer;
+    color: #E57C23;
+    scale: 3.25;
+}
+.fa-github{
+    color: white;
+    position: absolute;
+    scale:2.5;
+    position: absolute;
+    left: 25%;
+    transition: 0.25s;
+}
+.fa-github:hover{
+    cursor: pointer;
+    color: #E57C23;
+    scale: 3.25;
+}
+@media (max-width:1050px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        scale: 0.75;
+    }
+}
+@media (max-width: 350px){
+    *{
+        font-size: small;
+    }
+}
+#icons{
+    display: flex;
+    top:45%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    position: absolute;
+    left: 16.5%;
+    top: 72%;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+    letter-spacing: 0.2em;
+}
+@keyframes slideIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+p{
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+span{
+    color: #E57C23;
+}   

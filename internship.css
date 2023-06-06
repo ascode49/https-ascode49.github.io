@@ -1,0 +1,150 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}    
+.nav{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    scale: 1.1;
+}
+.header a{
+    color: #dddddd;;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    transition: 0.25s;
+    scale: 1.1;
+}
+.header a:hover{
+    font-size: x-large;
+    color: #0079FF;
+    font-weight: bold;
+}
+html { 
+    background: url(earth.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Sign{
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #0079FF;
+}
+#Sign:hover{
+    font-size: large;
+    color: white;
+}
+img{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    margin-top: 1em;
+    scale: 0.8;
+}
+img:hover{
+    border: 0.25em solid #0079FF;
+    transition: 0.25s;
+    cursor:pointer;
+}
+ h2{
+    color: white;
+    position: absolute;
+    top:57%;
+    left: 45%;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.1em;
+    scale: 1.3;
+} 
+p{
+    color: #0079FF;
+    position: absolute;
+    top: 64.5%;
+    left: 46.25%;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.1em;
+    scale:1.5;
+} 
+h1{
+    color: white;
+    position: absolute;
+    top:40%;
+    left:35%;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.1em;
+    scale: 1.5;
+}
+#tn{
+    text-decoration: none;
+    color: white;
+}
+#tn:hover{
+    transition: 0.25s;
+    color:#FF55BB;
+    cursor: pointer;
+}
+button{
+    width:9%;
+    height: 7%;
+    position: absolute;
+    top:77%;
+    left:44.25%;
+    background-color: transparent;
+    border: 0.1em solid #0079FF;
+    color: white;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.05em;
+}
+button:hover{
+    transition: 0.25s;
+    transition: transform 0.35s;
+    background-color: #0079FF;
+    transform: translateY(-0.6em);
+    box-shadow: 0.2em 0.2em 0.5em #FF55BB;
+    cursor: pointer;
+}
+@media (max-width:1050px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        scale: 0.75;
+    }
+}
+@media (max-width: 350px){
+    *{
+        font-size: small;
+    }
+}
+@keyframes rotate{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+main{
+    animation-name: rotate;
+    animation-duration: 0.65s;
+    animation-timing-function: ease-in;
+}

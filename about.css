@@ -1,0 +1,153 @@
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}    
+.nav{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    scale: 1.1;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    transition: 0.25s;
+    scale: 1.1;
+}
+.header a:hover{
+    font-size: x-large;
+    color: #0079FF;
+    font-weight: bold;
+}
+.header::selection{
+    background-color: #107e57;
+}
+html { 
+    background: url(earth.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about{
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #0079FF;
+}
+#about:hover{
+    font-size: large;
+    color: white;
+}
+img{
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    margin-top: 1em;
+    scale: 0.8;
+}
+img:hover{
+    border: 0.25em solid #0079FF;
+    transition: 0.25s;
+    cursor: pointer;
+}
+main{
+    width: 50%;
+    position: absolute;
+    top:45%;
+    left:10%;
+    align-self: center;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+}
+button{
+    width: 10%;
+    height: 10%;
+    position:absolute;
+    top:70%;
+    left:8.5%;
+    scale: 0.7;
+    border-radius: 7%;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0.2em solid #0079FF ;
+    color: white;
+    letter-spacing: 0.2em;
+    transition: 0.5s ease-out;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #0079FF;
+    transform: translateX(0.5em);
+    box-shadow: -0.2em -0.2em 0.5em #FF55BB;
+}
+main{
+    animation: transitionIn 0.5s;
+}
+@keyframes transitionIn{
+    from{
+        transform: translateY() 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        transform: translateY() 1;
+        transform: rotateX(0);
+    }
+}
+@media (max-width:1050px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        scale: 0.75;
+    }
+}
+@media (max-width: 350px){
+    *{
+        font-size: small;
+    }
+}
+@keyframes slideIn{
+    from{
+        transform: translateY(20em) ;
+    }
+    to{
+        transform: translateY(0) ;
+    }
+}
+main{
+    animation-name: slideIn;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+}
+button{
+    animation-name: slideIn;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+}
